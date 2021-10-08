@@ -1,0 +1,169 @@
+$CyanColor: hsl(179, 62%, 43%);
+$YellowColor: hsl(71, 73%, 54%);
+$GrayColor: hsl(204, 43%, 93%);
+$BlueColor: hsl(179, 49%, 59%);
+
+* {
+  box-sizing: border-box;
+
+
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: $GrayColor;
+}
+
+.container {
+  margin: 8rem auto;
+  max-width: 600px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+
+}
+
+.main {
+
+  .sections {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 30px -6px rgba(199, 199, 199, 0.7);
+
+
+    .join {
+      background-color: white;
+      padding: 1rem 2rem;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      box-shadow: inset 0px 7px 24px -20px rgba(0, 0, 0, 0.21);
+
+      h2 {
+        color: $CyanColor;
+      }
+
+      h3 {
+        color: $YellowColor;
+        font-size: 17px;
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        margin-top: 0;
+        color: hsl(204, 26%, 79%);
+        line-height: 1.6;
+      }
+    }
+
+    .sidebyside {
+      display: flex;
+      flex-direction: row;
+      flex: 50%;
+
+
+      .sub {
+        background-color: $CyanColor;
+        color: white;
+        flex: 50%;
+        padding: 1rem 1.95rem;
+        box-shadow: inset 0px 7px 24px -20px rgba(0, 0, 0, 0.21);
+        border-bottom-left-radius: 5px;
+
+
+        .amount {
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        .per {
+          color: $GrayColor;
+          margin-left: 5px;
+        }
+
+        .btn {
+          border-radius: 5px;
+          background-color: $YellowColor;
+          text-align: center;
+          padding: 13px 10px;
+          display: block;
+          margin-top: 1.7rem;
+          box-shadow: rgba(0, 0, 0, 0.158) 0px 7px 10px;
+
+          transition: all 0.3s ease 0s;
+
+          &:hover,
+          &:focus {
+            background-color: hsla(71, 73%, 54%, 0.87);
+            transform: translateY(-4px);
+            box-shadow: rgba(118, 138, 32, 0.44) 0px 7px 10px;
+
+          }
+        }
+
+      }
+
+      .why {
+        background-color: $BlueColor;
+        color: white;
+        flex: 50%;
+        border-bottom-right-radius: 5px;
+        padding: 1rem;
+        padding-left: 2.2rem;
+        box-shadow: inset 0px 7px 24px -20px rgba(0, 0, 0, 0.21);
+
+        li {
+          padding-top: 2px;
+
+
+          a {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.911);
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  .attribution {
+    text-align: center;
+
+    a {
+      color: rgb(117, 116, 116);
+    }
+  }
+}
+
+@media(max-width:425px) {
+  .main {
+    .sections {
+      .sidebyside {
+        display: flex;
+        flex-direction: column;
+
+        .sub {
+          border-bottom-left-radius: 0;
+
+          .btn {
+            margin-bottom: 5px;
+          }
+        }
+
+        .why {
+          border-bottom-left-radius: 5px;
+        }
+      }
+    }
+  }
+}
