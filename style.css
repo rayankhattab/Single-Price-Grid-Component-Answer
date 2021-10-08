@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #e5eff5;
+}
+
+.container {
+  margin: 8rem auto;
+  max-width: 600px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.main .sections {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 30px -6px rgba(199, 199, 199, 0.7);
+}
+.main .sections .join {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: inset 0px 7px 24px -20px rgba(0, 0, 0, 0.21);
+}
+.main .sections .join h2 {
+  color: #2ab2af;
+}
+.main .sections .join h3 {
+  color: #c0df34;
+  font-size: 17px;
+  margin-bottom: 0.8rem;
+}
+.main .sections .join p {
+  margin-top: 0;
+  color: #bcccd7;
+  line-height: 1.6;
+}
+.main .sections .sidebyside {
+  display: flex;
+  flex-direction: row;
+  flex: 50%;
+}
+.main .sections .sidebyside .sub {
+  background-color: #2ab2af;
+  color: white;
+  flex: 50%;
+  padding: 1rem 1.95rem;
+  box-shadow: inset 0px 7px 24px -20px rgba(0, 0, 0, 0.21);
+  border-bottom-left-radius: 5px;
+}
+.main .sections .sidebyside .sub .amount {
+  font-size: 30px;
+  font-weight: bold;
+}
+.main .sections .sidebyside .sub .per {
+  color: #e5eff5;
+  margin-left: 5px;
+}
+.main .sections .sidebyside .sub .btn {
+  border-radius: 5px;
+  background-color: #c0df34;
+  text-align: center;
+  padding: 13px 10px;
+  display: block;
+  margin-top: 1.7rem;
+  box-shadow: rgba(0, 0, 0, 0.158) 0px 7px 10px;
+  transition: all 0.3s ease 0s;
+}
+.main .sections .sidebyside .sub .btn:hover, .main .sections .sidebyside .sub .btn:focus {
+  background-color: rgba(192, 223, 52, 0.87);
+  transform: translateY(-4px);
+  box-shadow: rgba(118, 138, 32, 0.44) 0px 7px 10px;
+}
+.main .sections .sidebyside .why {
+  background-color: #63cac8;
+  color: white;
+  flex: 50%;
+  border-bottom-right-radius: 5px;
+  padding: 1rem;
+  padding-left: 2.2rem;
+  box-shadow: inset 0px 7px 24px -20px rgba(0, 0, 0, 0.21);
+}
+.main .sections .sidebyside .why li {
+  padding-top: 2px;
+}
+.main .sections .sidebyside .why li a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.911);
+}
+
+.footer .attribution {
+  text-align: center;
+}
+.footer .attribution a {
+  color: #757474;
+}
+
+@media (max-width: 425px) {
+  .main .sections .sidebyside {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .sections .sidebyside .sub {
+    border-bottom-left-radius: 0;
+  }
+  .main .sections .sidebyside .sub .btn {
+    margin-bottom: 5px;
+  }
+  .main .sections .sidebyside .why {
+    border-bottom-left-radius: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
